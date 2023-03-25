@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Responsive Portfolio Website</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav_logo">Varun</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="uil uil-estate nav_icon"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-desktop nav_icon"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#qualification" class="nav_link">
+                            <i class="uil uil-bag nav_icon"></i>
+                            Qualification
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">
+                            <i class="uil uil-mountains-sun nav_icon"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class="uil uil-message nav_icon"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close nav_icon" id="nav-close"></i>
+            </div>
+            <div class="nav_btns">
+
+                <!-- Theme change Button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps nav_icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="https://linkedin.com/in/varunvvaidya" target="_blank" class="home_social_icon"><i
+                                class="uil uil-linkedin"></i></a>
+                        <a href="https://github.com/varun21vaidya" target="_blank" class="home_social_icon"><i
+                                class="uil uil-github"></i></a>
+                        <a href="https://leetcode.com/varun21vaidya/" target="_blank" class="home_social_icon"><i
+                                class="uil uil-arrow"></i></a>
+                    </div>
+                    <div class="home_img">
+                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home_blob_img" x="20" y="10" href="assets/img/perfil.png" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home_data">
+                        <h1 class="home_title">Hi I'am Varun</h1>
+                        <h3 class="home_subtitle">Full Stack Developer</h3>
+                        <p class="home_description">
+                            1+ Year Experience with Frontend & Backend using MEAN Stack and
+                            AWS Services.
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me
+                            <i class="uil uil-message nav_icon button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home_scroll_button">
+                    <a href="#about" class="button--flex">
+                        <span class="home_scroll_name">Know More..</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <span class="section_subtitle"> Introduction </span>
+            <div class="about_container container grid">
+                <img class="about_img" src="assets/img/coder.png" alt="about image" />
+                <div class="about_data">
+                    <p class="about_description">
+                        Web Developer with strong Communication, Management Skills,
+                        Experience in working with cross functional teams.
+                    </p>
+                    <div class="about_info">
+                        <div>
+                            <span class="about_info_title"> 1+ </span>
+                            <span class="about_info_name">
+                                Years <br />
+                                Experience
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="about_info_title"> 10+ </span>
+                            <span class="about_info_name">
+                                Projects <br />
+                                Completed
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="about_info_title"> 1+ </span>
+                            <span class="about_info_name">
+                                Years <br />
+                                Experience
+                            </span>
+                        </div>
+                    </div>
+                    <div class="about_buttons">
+                        <a download="" href="assets/pdf/VarunVaidyaResume.pdf" class="button button--flex">
+                            Download Resume <i class="uil uil-download-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle"> Techincal Skills </span>
+
+            <div class="skills_container container grid">
+                <div>
+                    <!--==================== SKILLS 1====================-->
+                    <div class="skills_content">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_header_title">Full Stack Developer</h1>
+                                <span class="skills_subtitle"> More than 1+ years </span>
+
+                                <i class="uil uil-arrow-down skills_arrow"></i>
+                            </div>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <img src="./assets/img/html.png" class="skill_logo" alt="" />
+                                <div class="skills_title">
+                                    <h3 class="skills_name">HTML</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/css.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">CSS</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/js.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">JAVASCRIPT</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/python.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">PYTHON</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/java.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">JAVA</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/nodejs.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">NODEJS</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/angular.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">ANGULAR</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/typescript.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">TYPESCRIPT</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/sql.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">SQL</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/mongodb.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">MONGODB</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/git.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">GIT</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <img src="./assets/img/AWS.png" class="skill_logo" alt="" />
+
+                                <div class="skills_title">
+                                    <h3 class="skills_name">AWS Services</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section_title">Qualification</h2>
+            <span class="section_subtitle">My Journey</span>
+
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button--flex qualification_active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification_icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification_button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification_icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification_sections">
+                    <div class="qualification_content" data-content id="education">
+                        <div class="qualification_data">
+                            <div class="left">
+                                <h3 class="qualification_title">Mechanical Engineer</h3>
+                                <span class="qualification_subtitle">Shivaji University</span>
+                                <div class="qualification_calender">
+                                    <i class="uil uil-calendar-alt"></i> 2017-2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <div class="qualification_line"></div>
+                            </div>
+                        </div>
+
+                        <div class="qualification_data">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <div class="qualification_line"></div>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification_title">UAV Research Intern</h3>
+                                <span class="qualification_subtitle">Aero2Astro</span>
+                                <div class="qualification_calender">
+                                    <i class="uil uil-calendar-alt"></i> May 2021 - Oct 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification_data">
+                            <div class="left">
+                                <h3 class="qualification_title">System Engineer Trainee</h3>
+                                <span class="qualification_subtitle">Infosys</span>
+                                <div class="qualification_calender">
+                                    <i class="uil uil-calendar-alt"></i> Dec 2021 - Mar 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <div class="qualification_line"></div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qualification_content" data-content id="work">
+                        <div class="qualification_data">
+                            <div class="left">
+                                <h3 class="qualification_title">System Engineer</h3>
+                                <span class="qualification_subtitle">Infosys</span>
+                                <div class="qualification_calender">
+                                    <i class="uil uil-calendar-alt"></i> Apr 2022 - July 2022
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <div class="qualification_line"></div>
+                            </div>
+                        </div>
+
+                        <div class="qualification_data">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <div class="qualification_line"></div> -->
+                            </div>
+                            <div>
+                                <h3 class="qualification_title">Specialist Programmer</h3>
+                                <span class="qualification_subtitle">Infosys</span>
+                                <div class="qualification_calender">
+                                    <i class="uil uil-calendar-alt"></i> July 2022 - Present
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section container" id="portfolio">
+            <h2 class="section_title">Projects</h2>
+            <span class="section_subtitle">Latest Projects</span>
+            <div class="portfolio_container container swiper">
+                <div class="swiper-wrapper">
+                    <!-- project 1 -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/bharat-cafe.jpg" class="portfolio_img" alt="" />
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Bharat Cafe</h3>
+                            <p class="portfolio_description">
+                                A Full
+                                Stack Modern, Responsive Fast Food Restaurant Website
+                            </p>
+                            <div class="button_container">
+                                <a href="https://bharat-cafe-varun21vaidya.vercel.app/" target="_blank"
+                                    class="button button--flex portfolio_button">
+                                    Live Site
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                                <a href="https://github.com/varun21vaidya/Bharat-Cafe" target="_blank"
+                                    class="button button--flex portfolio_button button_code">
+                                    Code
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- project 2 -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img//sharenow.jpg" class="portfolio_img" alt="" />
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Share Now</h3>
+                            <p class="portfolio_description">
+                                A Clean and Quick Way to Share your Files to Anyone Anywhere.
+
+                                Made with Angular, Nodejs, and MongoDB Atlas.
+                            </p>
+                            <div class="button_container">
+                                <a href="https://share-now-file-sharing-app.vercel.app/" target="_blank"
+                                    class="button button--flex portfolio_button">
+                                    Live Site
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                                <a href="https://github.com/varun21vaidya/ShareNow" target="_blank"
+                                    class="button button--flex portfolio_button button_code">
+                                    Code
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- project 3 -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/do-it.jpg" class="portfolio_img" alt="" />
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">DO IT</h3>
+                            <p class="portfolio_description">
+                                Superclean Task Managing App
+                            </p>
+                            <div class="button_container">
+                                <a href="https://doit-todo-app.netlify.app/" target="_blank"
+                                    class="button button--flex portfolio_button">
+                                    Live Site
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                                <a href="https://github.com/varun21vaidya/DOIT-Angular" target="_blank"
+                                    class="button button--flex portfolio_button button_code">
+                                    Code
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- project 4 -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/backpackershub.jpg" class="portfolio_img" alt="" />
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">BackPackersHub</h3>
+                            <p class="portfolio_description">
+                                Frontend Tours and Travels Company Site
+                            </p>
+                            <div class="button_container">
+                                <a href="https://backpackershub.netlify.app/" target="_blank"
+                                    class="button button--flex portfolio_button">
+                                    Live Site
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                                <a href="https://github.com/varun21vaidya/BackPackersHub" target="_blank"
+                                    class="button button--flex portfolio_button button_code">
+                                    Code
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- project 4 -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" class="portfolio_img" alt="" />
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">ALL Projects</h3>
+                            <p class="portfolio_description">
+                                All my Amazing Projects with Source Code..
+                            </p>
+                            <div class="button_container">
+                                <a href="https://github.com/varun21vaidya/Projects" target="_blank"
+                                    class="button button--flex portfolio_button button_code">
+                                    Code
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Hire Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-phone contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title"> Call Me</h3>
+                            <a class="contact_subtitle">+91 9028535008</a>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-at contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title"> Mail Me</h3>
+                            <a href="mailto:varunvaidya2107@gmail.com" target="_blank"
+                                class="contact_subtitle">varunvaidya2107@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label class="contact_label">Name</label>
+                            <input type="text" class="contact_input">
+                        </div>
+
+                        <div class="contact_content">
+                            <label class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label class="contact_label">Subject</label>
+                        <input type="text" class="contact_input">
+                    </div>
+                    <div class="contact_content">
+                        <label class="contact_label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#contact" class="button button--flex">
+                            Send Message <i class="uil uil-message contact_icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Varun</h1>
+                    <span class="footer_subtitle">Full Stack Developer</span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#skills" class="footer_link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer_link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="footer_socials">
+                    <a href="https://linkedin.com/in/varunvvaidya" target="_blank" class="footer_social"><i
+                            class="uil uil-linkedin"></i></a>
+                    <a href="https://github.com/varun21vaidya" target="_blank" class="footer_social"><i
+                            class="uil uil-github"></i></a>
+                    <a href="https://leetcode.com/varun21vaidya/" target="_blank" class="footer_social"><i
+                            class="uil uil-arrow"></i></a>
+                </ul>
+
+            </div>
+            <p class="footer_copy">Made by Varun with &#10084;&#65039;</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
