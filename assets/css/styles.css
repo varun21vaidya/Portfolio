@@ -941,7 +941,8 @@ img {
     padding: 7rem 0 2rem;
   }
 
-  .home_social_icon {
+  .home_social_icon,
+  .footer_social {
     font-size: 2rem;
   }
 
