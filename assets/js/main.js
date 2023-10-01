@@ -141,3 +141,31 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*==================== CONTACT ME ====================*/
+function copyToClipboard() {
+    // Get the text field
+    var copyText = document.getElementById("copyEmail");
+    navigator.clipboard.writeText(copyText.innerText);
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied Email to Clipboard";
+}
+function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
+function Send_Email() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "varunvaidya2107@gmail.com",
+        Password: "1F986A35274ADFF770B07823DC06A7F43461",
+        To: document.getElementById("senderemail").value,
+        From: 'varunvaidya2107@gmail.com',
+        Subject: document.getElementById("subject").value,
+        Body: document.getElementById("body").value
+    }).then(
+        message => alert("Message send succesfully!")
+    );
+}
