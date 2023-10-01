@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
@@ -543,12 +544,17 @@
                         </div>
                     </div>
 
+
                     <div class="contact_information">
                         <i class="uil uil-at contact_icon"></i>
                         <div>
                             <h3 class="contact_title"> Mail Me</h3>
-                            <a href="mailto:varunvaidya2107@gmail.com" target="_blank"
-                                class="contact_subtitle">varunvaidya2107@gmail.com</a>
+                            <div class="tooltip">
+                                <a onclick="copyToClipboard()" onmouseout="outFunc()" class="contact_subtitle">
+                                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                                    <span id="copyEmail">varunvaidya2107@gmail.com</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -557,25 +563,25 @@
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label class="contact_label">Name</label>
-                            <input type="text" class="contact_input">
+                            <input type="text" id="sendername" class="contact_input">
                         </div>
 
                         <div class="contact_content">
                             <label class="contact_label">Email</label>
-                            <input type="email" class="contact_input">
+                            <input type="email" id="senderemail" class="contact_input">
                         </div>
                     </div>
                     <div class="contact_content">
                         <label class="contact_label">Subject</label>
-                        <input type="text" class="contact_input">
+                        <input type="text" id="subject" class="contact_input">
                     </div>
                     <div class="contact_content">
                         <label class="contact_label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                        <textarea name="" id="body" cols="0" rows="7" class="contact_input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#contact" class="button button--flex">
+                        <a type="button" onclick="Send_Email()" class="button button--flex">
                             Send Message <i class="uil uil-message contact_icon"></i>
                         </a>
                     </div>
@@ -630,6 +636,8 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="./assets/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+
 </body>
 
 </html>
