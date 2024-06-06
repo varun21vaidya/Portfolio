@@ -83,12 +83,21 @@
             <div class="home_container container grid">
                 <div class="home_content grid">
                     <div class="home_social">
-                        <a href="https://linkedin.com/in/varunvvaidya" target="_blank" class="home_social_icon"><i
-                                class="uil uil-linkedin"></i></a>
-                        <a href="https://github.com/varun21vaidya" target="_blank" class="home_social_icon"><i
+                        <div class="tooltip">
+                                <span class="tooltiptext right">LinkedIn</span>
+                                <a href="https://linkedin.com/in/varunvvaidya" target="_blank" class="home_social_icon"><i
+                                    class="uil uil-linkedin"></i></a>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltiptext right">GitHub Profile</span>
+                            <a href="https://github.com/varun21vaidya" target="_blank" class="home_social_icon"><i
                                 class="uil uil-github"></i></a>
-                        <a href="https://leetcode.com/varun21vaidya/" target="_blank" class="home_social_icon"><i
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltiptext right">Tech Blogs</span>
+                            <a href="https://dev.to/varun21vaidya" target="_blank" class="home_social_icon"><i
                                 class="uil uil-arrow"></i></a>
+                        </div>
                     </div>
                     <div class="home_img">
                         <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +113,7 @@
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home_blob_img" x="20" y="10" href="assets/img/perfil.png" />
+                                <image class="home_blob_img" x="12" y="10" href="assets/img/perfil.png" />
                             </g>
                         </svg>
                     </div>
@@ -144,23 +153,26 @@
                             <span class="about_info_title"> 1 </span>
                             <span class="about_info_name">
                                 <a href="https://drive.google.com/file/d/1xdNrsFPDE10xR6X2Fa1D8JrqIsow2I-6/view?usp=sharing"
-                                    target="_blank">Published</a> <br>
+                                    target="_blank" class="about-links">Published</a> <br>
                                 Research Article
                             </span>
                         </div>
 
                         <div>
-                            <span class="about_info_title"> 10+ </span>
+                            <span class="about_info_title"> 15+ </span>
                             <span class="about_info_name">
-                                Projects <br />
+                                <a href="https://github.com/varun21vaidya/Projects" class="about-links"
+                                    target="_blank">Projects</a>
+                                 <br />
                                 Completed
                             </span>
                         </div>
 
                         <div>
-                            <span class="about_info_title"> 400+ </span>
+                            <span class="about_info_title"> 500+ </span>
                             <span class="about_info_name">
-                                Leetcode <br />
+                                <a href="https://leetcode.com/u/varun21vaidya/" class="about-links">DSA</a>
+                                 <br />
                                 Questions Solved
                             </span>
                         </div>
@@ -551,7 +563,7 @@
                             <h3 class="contact_title"> Mail Me</h3>
                             <div class="tooltip">
                                 <a onclick="copyToClipboard()" onmouseout="outFunc()" class="contact_subtitle">
-                                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                                    <span class="tooltiptext bottom" id="myTooltip">Copy to clipboard</span>
                                     <span id="copyEmail">varunvaidya2107@gmail.com</span>
                                 </a>
                             </div>

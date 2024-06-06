@@ -22,6 +22,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --about-links-color: #0000ee;
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -82,6 +83,7 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --about-links-color:rgba(248, 248, 92, 0.973);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -288,7 +290,7 @@ img {
 
 .home_social_icon {
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--link-color);
 }
 .home_social_icon:hover {
   color: var(--first-color-alt);
@@ -301,6 +303,7 @@ img {
 }
 .home_blob_img {
   width: 170px;
+  transform: scale(1.1);
 }
 
 .home_data {
@@ -408,6 +411,10 @@ img {
 .about_buttons {
   display: flex;
   justify-content: center;
+}
+
+.about-links{
+  color: var(--about-links-color);
 }
 /*==================== SKILLS ====================*/
 
@@ -985,9 +992,6 @@ img {
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -995,8 +999,6 @@ img {
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
-  top: 100%;
-  left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
@@ -1006,4 +1008,17 @@ img {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.bottom {
+  top: 150%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.right {
+  font-size: smaller;
+  width: 100px !important;
+  top: -5px;
+  left: 100%;
 }
